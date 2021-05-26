@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="jumbotron text-center">Welcome {{user}}!</h1>
+    <div ng-controller="customersCtrl">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Release date</th>
+                    <th>Price</th>
+                    <th>Quantity in stock</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  ng-repeat="x in names" style="background: silver;">
+                    <td>{{x.Title}}</td>
+                    <td>{{x.Artist}}</td>
+                    <td>{{x.ReleaseDate}}</td>
+                    <td>{{x.Price}}</td>
+                    <td>{{x.Quantity}}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="collapse" ng-click="details(x.id)">Details</button>
+                        <button type="button" class="btn btn-dark" data-toggle="collapse" ng-click="delete(x.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

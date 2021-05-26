@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Login Page</title>
+</head>
+<body style="width: 80%; margin-left: 10%; background-image: url('background.jpg');">
+    <div ng-controller="crudController">
+        <nav class="navbar bg-dark navbar-dark" id="buttons">
+            <span><button type="button" class="btn btn-primary" class="active" ng-click="start()">Home</button>
+                <button type="button" class="btn btn-primary" ng-click="addNew()">Add new CD</button></span>
+            <button type="button" class="btn btn-outline-primary" data-toggle="collapse" ng-click="goToLogin()">Log
+                Out</button>
+        </nav>
+    </div>
+    <img src="logo.jpg" class="rounded" width="100%"/>
+    
+    <div ng-view id="loginPage"></div>
+    <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>

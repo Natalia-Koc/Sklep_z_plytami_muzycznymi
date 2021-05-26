@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div class="jumbotron text-center" id="loginForm">
+        <div class="input">
+            <h1> Welcome to music record store!</h1><br>
+
+            <div class="col" style="width: 20%; margin-left: 40%;">
+                <div class="form-group">
+                    <label for="usr">Username:</label>
+                    <input type="text" class="form-control" ng-model="username" placeholder="Username" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pas">Password:</label>
+                    <input type="password"  class="form-control" ng-model="password" placeholder="Password" id="pas">
+                </div>
+            </div>
+            <br>
+            <button class="btn btn-primary" ng-click="login()">Login</button>
+            <button class="btn btn-light" ng-click="goToRegister()">Sign up</button><br><br>
+        </div>
+    </div>
+</body>
+</html>
